@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <meta name="author" content="Zheng Zhang">
-  <title>Zheng Zhang | Homepage</title>
+  <meta name="author" content="Jingyu">
+  <title>Jingyu | Homepage</title>
   <!-- <link rel="shortcut icon" href="./assets/img/favicon.png"> -->
   <link rel="stylesheet" href="./assets/css/plugins.css">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -25,18 +25,24 @@
   <!-- icon reference -->
   <script src="https://kit.fontawesome.com/15d8ad1c1d.js" crossorigin="anonymous"></script>
   <style>
+    body {
+      font-family: "Georgia", serif; /* Use a more readable serif font */
+    }
     a {
-        color: #c9ada7;  /* Sets the default link color */
+      color: #1462c1;  /* 奶油般柔和的黄 */
+      font-weight: normal;
     }
+  
+    a:hover{
+      color: #1462c1;
+      text-decoration: underline;
+    }
+    .highlight{
+      color: #c6a10e;  /* 稍浓郁的黄，hover 状态下更醒目 */
+      font-weight: bold;
 
-    a:hover {
-      color: #bc6c25;  /* Link color when hovered over */
     }
-
-    ::selection {
-      background: #e6ccb2;  /* Changes the background color of highlighted text */
-    }
-</style>
+  </style>
 </head>
 
 <body>
@@ -44,14 +50,17 @@
     <section class="wrapper bg-light wrapper-border">
       <div class="container inner py-4">
         <div class="row gx-lg-8 gx-xl-12 gy-4 gy-lg-0">
-          <div class="col-md-8 align-self-center text-center text-md-start navigation">
-            <a href="https://zhengzhang.me">
-              <h3 class="text-black fs-30 mb-0">Zheng Zhang | 张正</h3>
-            </a>
+          <div class="col-md-8 align-self-center text-center text-md-start navigation flex">
+            <div class="d-flex align-items-center">
+              <a href="https://jingyuhhh.github.io/" class="logo me-3">
+                <h3 class="text-black fs-30 mb-0">Jingyu Tang</h3>
+              </a>
+              <p class="lead fs-18 mb-0">HCI + NLP Researcher</p>
+              </div>
           </div>
           <div class="col-md-4 align-self-center text-center text-md-start navigation">
-            <a href="#about" class="btn btn-sm btn-soft-ash rounded-pill btn-icon btn-icon-start mb-0 me-1 add-margin">About</a>
-            <a href="#publications" class="btn btn-sm btn-soft-ash rounded-pill btn-icon btn-icon-end mb-0 add-margin">Publications</a>
+            <!-- <a href="#about" class="btn btn-sm btn-soft-ash rounded-pill btn-icon btn-icon-start mb-0 me-1 add-margin">About</a>
+            <a href="#publications" class="btn btn-sm btn-soft-ash rounded-pill btn-icon btn-icon-end mb-0 add-margin">Publications</a> -->
           </div>
         </div>
       </div>
@@ -62,7 +71,7 @@
       <!-- <div class="container"> -->
       <div class="container py-8 py-md-4">
         <div class="row gx-lg-8 gx-xl-12">
-          <div class="col-lg-8">
+          <div class="col-lg-9">
             <div id="about" class="row">
 
               <!-- ********************************* -->
@@ -70,14 +79,23 @@
               <!-- ********************************* -->
 
               <div class="col-md-3 add-padding">
-                <figure class="rounded"><img src="./assets/img/profile_image.jpg" alt=""/></figure>
+                <figure class="rounded"><img src="./assets/img/profile_image.jpeg" alt=""/></figure>
               </div>
               <div class="col-md-9 add-padding">
-                <p>I am an Applied Scientist in GenAI team at Adobe Experience Platform (AEP), working on R&D at the intersection of HCI and ML for enhancing user experience and performance of <a href="https://business.adobe.com/products/sensei/ai-assistant.html">AEP AI Assistant</a>. I'm also a graduating Ph.D candidate in the <a href="https://cse.nd.edu/">Department of Computer Science and Engineering</a> at the <a href="http://www.nd.edu/">University of Notre Dame</a>, advised by Prof. <a href="https://toby.li/">Toby Jia-Jun Li</a>. Before joining ND, I received two M.S. degrees in Computer Science from the <a href="https://www.rochester.edu/">University of Rochester</a> and the <a href="https://www.umn.edu/">University of Minnesota</a>, where I was advised by <a href="https://zhenbai.io/">Dr. Zhen Bai</a> and <a href="https://haiyizhu.com/">Dr. Haiyi Zhu</a> respectively. I received B.Eng. in Software Engineering from <a href="https://www.snnu.edu.cn/">Shaanxi Normal University</a>. I have also worked at Apple, AWS AI and Meta Reality Labs as a research scientist intern.</p>
+                <p>I am a research intern at <a href="https://www.kixlab.org/">Kixlab</a>, supervised by <a href="https://juhokim.com/">Juho Kim</a>. This summer, I will be joining <a href="https://toby.li/students/">SaNDwich Lab</a> as a research intern under the supervision of <a href="https://toby.li/">Toby Li</a> in this summmer. Previously, I interned at <a href="https://www.bytedance.com/en/">Bytedance</a> as a frontend engineer.</p>
+                <p>My research interests lie at the intersection of Human-Computer Interaction, Natural Language Processing, and Social Computing. 
+                  <p>Specifically, I am interested in <br>
+                  (1) deepening our understanding of the existing gaps in aligning LLMs with human.<br>
+                  (2) designing and developing interactive systems that promote user trust and foster alignment with human.
+                </p>
+                </p>
+                <p class="highlight">I will be applying for PhD programs in HCI in Fall 2026!</p>
+
+                
               </div>
-              <div class="col-md-12 add-padding">
-                <p>My research focuses on human-AI interaction, aiming to <b>design interactive AI-powered systems that provide adaptive, context-sensitive, on-demand support throughout complex cognitive tasks</b>. I have developed human-AI collaborative tools that adapt dynamically to evolving user goals, providing progressive cognitive scaffolding to enhance social interaction and learning beyond the traditional classroom. Additionally, I have implemented semi-automated systems that learn incrementally from user demonstrations, enabling AI to gradually streamline workflows, accelerate insight generation, and support meaningful decision-making.</p>
-              </div>
+
+              <!-- <div class="col-md-12 add-padding">
+              </div> -->
             </div>
 
             <!-- ********************************* -->
@@ -85,20 +103,53 @@
             <!-- ********************************* -->
 
             <div id="publications" class="row py-8 py-md-4">
-              <h2>Publications</h2> <span>(* indicates equal contribution)</span>
+              <h2>Publications</h2> 
             </div>
 
             <div class="blog classic-view py-md-2">
               <div class="card card-body add-margin">
                 <div class="row">
                   <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/LADICA2025.pdf"><img src="./assets/img/paper/LADICA_img.png" alt="" /></a></figure>
+                    <figure class="hover-scale rounded"><a href="https://arxiv.org/abs/2502.17086"><img src="./assets/img/paper/paper_review.png" alt="" /></a></figure>
                   </div>
                   <div class="col-md-9 add-padding">
-                    <h6>LADICA: A Large Shared Display Interface for Generative AI Cognitive Assistance in Co-Located Team Collaboration</h6>
-                    <p class="p-condense"><b>Zheng Zhang</b>, Weirui Peng, Xinyue Chen, Luke Cao, and Toby Jia-Jun Li</p>
+                    <h6>Automatically Evaluating the Paper Reviewing Capability of Large Language Models</h6>
+                    <p class="p-condense">Hyungyu Shin, <b>Jingyu Tang</b>, Yoonjoo Lee, Nayoung Kim, Hyunseung Lim, Ji Yong Cho, Hwajung Hong, Moontae Lee, Juho Kim</p>
+                    <p class="p-condense">in submission</p>
+                    <p class="p-condense"><a href="https://arxiv.org/abs/2502.17086"><i class="fa-solid fa-file"></i> ArXiv</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog classic-view py-md-2">
+              <div class="card card-body add-margin">
+                <div class="row">
+                  <div class="col-md-3 py-md-2 add-padding">
+                    <figure class="hover-scale rounded"><a href="https://arxiv.org/abs/2406.13662"><img src="./assets/img/paper/jailbreak.png" alt="" /></a></figure>
+                  </div>
+                  <div class="col-md-9 add-padding">
+                    <h6>ObscurePrompt: Jailbreaking Large Language Models via Obscure Input</h6>
+                    <p class="p-condense">Yue Huang, <b>Jingyu Tang</b>, Dongping Chen, Bingda Tang, Yao Wan, Lichao Sun, Xiangliang Zhang
+                    </p>
+                    <p class="p-condense">in submission</p>
+                    <p class="p-condense"><a href="https://arxiv.org/abs/2406.13662"><i class="fa-solid fa-file"></i> ArXiv</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog classic-view py-md-2">
+              <div class="card card-body add-margin">
+                <div class="row">
+                  <div class="col-md-3 py-md-2 add-padding">
+                    <figure class="hover-scale rounded"><a href="https://arxiv.org/abs/2501.13443"><img src="./assets/img/paper/VMI.png" alt="" /></a></figure>
+                  </div>
+                  <div class="col-md-9 add-padding">
+                    <h6>Vision-Based Multimodal Interfaces: A Survey and Taxonomy for Enhanced Context-Aware System Design</h6>
+                    <p class="p-condense">Yongquan Hu, <b>Jingyu Tang</b>, Xinya Gong, Zhongyi Zhou, Shuning Zhang, Don Samitha Elvitigala, Florian'Floyd' Mueller, Wen Hu, Aaron J Quigley</p>
                     <p class="p-condense">CHI 2025</p>
-                    <p class="p-condense"><a href="./assets/files/LADICA2025.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://github.com/roryzhengzhang/Smart-collocated-whiteboard"><i class="fa-brands fa-github"></i> Code</a></p>
+                    <p class="p-condense"><a href="https://arxiv.org/abs/2501.13443"><i class="fa-solid fa-file"></i> ArXiv</a>
                   </div>
                 </div>
               </div>
@@ -108,227 +159,21 @@
               <div class="card card-body add-margin">
                 <div class="row">
                   <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/Dynamic_Bayesian_Network_IUI2025.pdf"><img src="./assets/img/paper/Dynamic_Bayesian_Network_img.png" alt="" /></a></figure>
+                    <figure class="hover-scale rounded"><a href="https://arxiv.org/abs/2406.10819"><img src="./assets/img/paper/gui.png" alt="" /></a></figure>
                   </div>
                   <div class="col-md-9 add-padding">
-                    <h6>A Dynamic Bayesian Network Based Framework for Multimodal Context-Aware Interactions</h6>
-                    <p class="p-condense">Violet Yinuo Han, Tianyi Wang, Hyunsung Cho, Kashyap Todi, Ajoy Savio Fernandes, Andre Levi, <b>Zheng Zhang</b>, Tovi Grossman, Alexandra Ion, and Tanya Jonker</p>
-                    <p class="p-condense">IUI 2025</p>
-                    <p class="p-condense"><a href="./assets/files/Dynamic_Bayesian_Network_IUI2025.pdf"><i class="fa-solid fa-file"></i> PDF</a></p>
+                    <h6>GUI-World: A Video Benchmark and Dataset for Multimodal GUI-oriented Understanding</h6>
+                    <p class="p-condense">Dongping Chen, Yue Huang, Siyuan Wu, <b>Jingyu Tang</b>, Liuyi Chen, Yilin Bai, Zhigang He, Chenlong Wang, Huichi Zhou, Yiqiang Li, Tianshuo Zhou, Yue Yu, Chujie Gao, Qihui Zhang, Yi Gui, Zhen Li, Yao Wan, Pan Zhou, Jianfeng Gao, Lichao Sun
+                    </p>
+                    <p class="p-condense">ICLR 2025</p>
+                    <p class="p-condense"><a href="https://arxiv.org/abs/2406.10819"><i class="fa-solid fa-file"></i> ArXiv</a> | <a href="https://gui-world.github.io/"><i class="fa-solid fa-link"></i> Website</a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="blog classic-view py-md-2">
-              <div class="card card-body add-margin">
-                <div class="row">
-                  <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/MIMOSA-2024.pdf"><img src="./assets/img/paper/MIMOSA_img.png" alt="" /></a></figure>
-                  </div>
-                  <div class="col-md-9 add-padding">
-                    <h6>MIMOSA: Human-AI Co-Creation of Computational Spatial Audio Effects on Videos</h6>
-                    <p class="p-condense">Zheng Ning*, <b>Zheng Zhang*</b>, Jerrick Ban, Kaiwen Jiang, Ruohong Gan, Yapeng Tian, and Toby Jia-Jun Li</p>
-                    <p class="p-condense">C&C 2024</p>
-                    <p class="p-condense"><a href="./assets/files/MIMOSA-2024.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://dl.acm.org/doi/10.1145/3635636.3656189"><i class="fa-solid fa-link"></i> ACM DL</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog classic-view py-md-2">
-              <div class="card card-body add-margin">
-                <div class="row">
-                  <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/TiiS-2024.pdf"><img src="./assets/img/paper/TiiS_img.png" alt="" /></a></figure>
-                  </div>
-                  <div class="col-md-9 add-padding">
-                    <h6>Insights into Natural Language Database uery Errors: From Attention Misalignment to User Handling Strategies</h6>
-                    <p class="p-condense">Ning Zheng, Yuan Tian, <b>Zheng Zhang</b>, Tianyi Zhang, and Toby Jia-Jun Li</p>
-                    <p class="p-condense">ACM Transactions on Interactive Intelligent Systems</p>
-                    <p class="p-condense"><a href="./assets/files/TiiS-2024.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://dl.acm.org/doi/10.1145/3650114"><i class="fa-solid fa-link"></i> ACM DL</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog classic-view py-md-2">
-              <div class="card card-body add-margin">
-                <div class="row">
-                  <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/CollabCoder-2023.pdf"><img src="./assets/img/paper/CollabCoder_img.png" alt="" /></a></figure>
-                  </div>
-                  <div class="col-md-9 add-padding">
-                    <h6>CollabCoder: A Lower-barrier, Rigorous Workflow for Inductive Collaborative Qualitative Analysis with Large Language Models</h6>
-                    <p class="p-condense">Jie Gao, Yuchen Guo, Gionnieve Lim, Tianqin Zhang, <b>Zheng Zhang</b>, Toby Jia-Jun Li, and Simon Tangi Perrault</p>
-                    <p class="p-condense">CHI 2024</p>
-                    <p class="p-condense"><a href="./assets/files/CollabCoder-2023.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://dl.acm.org/doi/10.1145/3613904.3642002"><i class="fa-solid fa-link"></i> ACM DL</a> | <a href="https://www.youtube.com/watch?v=RYJ84E5wEyU"><i class="fa-solid fa-video"></i> Video</a></p>
-                    <!-- <p class="p-condense">Stay tuned!</p> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog classic-view py-md-2">
-              <div class="card card-body add-margin">
-                <div class="row">
-                  <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/EMNLP-2023.pdf"><img src="./assets/img/paper/EMNLP_2023_img.png" alt="" /></a></figure>
-                  </div>
-                  <div class="col-md-9 add-padding">
-                    <h6>Interactive Text-to-SQL Generation via Editable Step-by-Step Explanations</h6>
-                    <p class="p-condense">Yuan Tian, <b>Zheng Zhang</b>, Zheng Ning, Toby Jia-Jun Li, Jonathan K. Kummerfeld, and Tianyi Zhang</p>
-                    <p class="p-condense">EMNLP 2023</p>
-                    <p class="p-condense"><a href="./assets/files/EMNLP-2023.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://github.com/magic-YuanTian/STEPS"><i class="fa-brands fa-github"></i> Code</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog classic-view py-md-2">
-              <div class="card card-body add-margin">
-                <div class="row">
-                  <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/PEANUT-2023.pdf"><img src="./assets/img/paper/PEANUT.png" alt="" /></a></figure>
-                  </div>
-                  <div class="col-md-9 add-padding">
-                    <h6>PEANUT: A Human-AI Collaborative Tool for Annotating Audio-Visual Data</h6>
-                    <p class="p-condense"><b>Zheng Zhang</b>, Zheng Ning, Chenliang Xu, Yapeng Tian, and Toby Jia-Jun Li</p>
-                    <p class="p-condense">UIST 2023</p>
-                    <p class="p-condense"><a href="./assets/files/PEANUT-2023.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://dl.acm.org/doi/10.1145/3586183.3606776"><i class="fa-solid fa-link"></i> ACM DL</a> | <a href="https://www.youtube.com/watch?v=PpPaxbxV5BI"><i class="fa-solid fa-video"></i> Video</a></p>
-                    <!-- <p class="p-condense">Stay tuned!</p> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog classic-view py-md-2">
-              <div class="card card-body add-margin">
-                <div class="row">
-                  <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/VISAR-2023.pdf"><img src="./assets/img/paper/visar_img.png" alt="" /></a></figure>
-                  </div>
-                  <div class="col-md-9 add-padding">
-                    <h6>VISAR: A Human-AI Argumentative Writing Assistant with Visual Programming and Rapid Draft Prototyping</h6>
-                    <p class="p-condense"><b>Zheng Zhang</b>, Jie Gao, Ranjodh Singh Dhaliwal, and Toby Jia-Jun Li</p>
-                    <p class="p-condense">UIST 2023</p>
-                    <p class="p-condense"><a href="./assets/files/VISAR-2023.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://dl.acm.org/doi/10.1145/3586183.3606800"><i class="fa-solid fa-link"></i> ACM DL</a> | <a href="https://visar.app/"><i class="fas fa-globe"></i> Live Demo</a> | <a href="https://www.youtube.com/watch?v=qmd03KFFy8Q"><i class="fa-solid fa-video"></i> Video</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog classic-view py-md-2">
-              <div class="card card-body add-margin">
-                <div class="row">
-                  <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/PATAT-CHI-2023.pdf"><img src="./assets/img/paper/patat_img.png" alt="" /></a></figure>
-                  </div>
-                  <div class="col-md-9 add-padding">
-                    <h6>PaTAT: Human-AI Collaborative Qualitative Coding with Explainable Interactive Rule Synthesis</h6>
-                    <p class="p-condense">Simret Araya Gebreegziabher*, <b>Zheng Zhang*</b>, Xiaohang Tang, Yihao Meng, Elena Glassman, and Toby Jia-jun Li</p>
-                    <p class="p-condense">CHI 2023</p>
-                    <p class="p-condense"><a href="./assets/files/PATAT-CHI-2023.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://dl.acm.org/doi/10.1145/3544548.3581352"><i class="fa-solid fa-link"></i> ACM DL</a> | <a href="https://www.youtube.com/watch?v=gfmsKkPjTtw"><i class="fa-solid fa-video"></i> Video</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog classic-view py-md-2">
-              <div class="card card-body add-margin">
-                <div class="row">
-                  <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/NL2SQL-IUI-2023.pdf"><img src="./assets/img/paper/NL2SQL_img.png" alt="" /></a></figure>
-                  </div>
-                  <div class="col-md-9 add-padding">
-                    <h6>An Empirical Study of Model Errors and User Error Discovery and Repair Strategies in Natural Language Database Queries</h6>
-                    <p class="p-condense">Zheng Ning*, <b>Zheng Zhang*</b>, Tianyi Sun, Yuan Tian, Tianyi Zhang, and Toby Jia-jun Li</p>
-                    <p class="p-condense">IUI 2023</p>
-                    <p class="p-condense"><a href="./assets/files/NL2SQL-IUI-2023.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://dl.acm.org/doi/10.1145/3581641.3584067"><i class="fa-solid fa-link"></i> ACM DL</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog classic-view py-md-2">
-              <div class="card card-body add-margin">
-                <div class="row">
-                  <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/fairytaleQA2022.pdf"><img src="./assets/img/paper/fairytaleQA2022_img.png" alt="" /></a></figure>
-                  </div>
-                  <div class="col-md-9 add-padding">
-                    <h6>Fantastic Questions and Where to Find Them: FairytaleQA – An Authentic Dataset for Narrative Comprehension</h6>
-                    <p class="p-condense">Ying Xu, Dakuo Wang, Mo Yu, Daniel Ritchie, Bingsheng Yao, Tongshuang Wu, <b>Zheng Zhang</b>, Toby Li, Nora Bradford, Branda Sun, Tran Hoang, Yisi Sang, Yufang Hou, Xiaojuan Ma, Diyi Yang, Nanyun Peng, Zhou Yu, and Mark Warschauer</p>
-                    <p class="p-condense">ACL 2022</p>
-                    <p class="p-condense"><a href="./assets/files/fairytaleQA2022.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://github.com/uci-soe/FairytaleQAData"><i class="fa-brands fa-github"></i> Dataset</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog classic-view py-md-2">
-              <div class="card card-body add-margin">
-                <div class="row">
-                  <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/storybookQA2022.pdf"><img src="./assets/img/paper/QA_pair_img.png" alt="" /></a></figure>
-                  </div>
-                  <div class="col-md-9 add-padding">
-                    <h6>It is AI’s Turn to Ask Humans a Question: Question-Answer Pair Generation for Children’s Story Books</h6>
-                    <p class="p-condense">Bingsheng Yao, Dakuo Wang, Tongshuang Wu, <b>Zheng Zhang</b>, Toby Li, Mo Yu, and Ying Xu</p>
-                    <p class="p-condense">ACL 2022</p>
-                    <p class="p-condense"><a href="./assets/files/storybookQA2022.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://github.com/WorkInTheDark/FairytaleQA_QAG_System"><i class="fa-brands fa-github"></i> Code</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog classic-view py-md-2">
-              <div class="card card-body add-margin">
-                <div class="row">
-                  <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/storybuddy2022.pdf"><img src="./assets/img/paper/storybuddy_img.png" alt="" /></a></figure>
-                  </div>
-                  <div class="col-md-9 add-padding">
-                    <h6>StoryBuddy: A Human-AI Collaborative Chatbot for Parent-Child Interactive Storytelling with Flexible Parental Involvement</h6>
-                    <p class="p-condense"><b>Zheng Zhang</b>, Ying Xu, Yanhao Wang, Bingsheng Yao, Daniel Ritchie, Tongshuang Wu, Mo Yu, Dakuo Wang, and Toby Jia-Jun Li</p>
-                    <p class="p-condense">CHI 2022</p>
-                    <p class="p-condense"><a href="./assets/files/storybuddy2022.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://dl.acm.org/doi/10.1145/3491102.3517479"><i class="fa-solid fa-link"></i> ACM DL</a> | <a href="https://github.com/roryzhengzhang/storytelling-QA-system"><i class="fa-brands fa-github"></i> Code</a> | <a href="https://www.youtube.com/watch?v=wvRthBqd-io"><i class="fa-solid fa-video"></i> Video</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog classic-view py-md-2">
-              <div class="card card-body add-margin">
-                <div class="row">
-                  <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/racegenderbeauty2020.pdf"><img src="./assets/img/paper/CHI_2020_img.png" alt="" /></a></figure>
-                  </div>
-                  <div class="col-md-9 add-padding">
-                    <h6>Race, Gender and Beauty: The Effect of Information Provision on Online Hiring Biases</h6>
-                    <p class="p-condense">Weiwen Leung*, <b>Zheng Zhang*</b>, Daviti Jibuti, Jinhao Zhao, Maximilian Klein, Casey Pierce, Lionel Robert, and Haiyi Zhu</p>
-                    <p class="p-condense">CHI 2020</p>
-                    <p class="p-condense"><a href="./assets/files/racegenderbeauty2020.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://dl.acm.org/doi/10.1145/3313831.3376874"><i class="fa-solid fa-link"></i> ACM DL</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog classic-view py-md-2">
-              <div class="card card-body add-margin">
-                <div class="row">
-                  <div class="col-md-3 py-md-2 add-padding">
-                    <figure class="hover-scale rounded"><a href="./assets/files/explainthroughui2019.pdf"><img src="./assets/img/paper/CHI_2019_img.png" alt="" /></a></figure>
-                  </div>
-                  <div class="col-md-9 add-padding">
-                    <h6>Explaining Decision-Making Algorithms through UI: Strategies to Help Non-Expert Stakeholders</h6>
-                    <p class="p-condense">Hao-Fei Cheng, Ruotong Wang, <b>Zheng Zhang</b>, Fiona O’Connell, Terrance Gray, F. Maxwell Harper, and Haiyi Zhu</p>
-                    <p class="p-condense">CHI 2019</p>
-                    <p class="p-condense"><a href="./assets/files/explainthroughui2019.pdf"><i class="fa-solid fa-file"></i> PDF</a> | <a href="https://dl.acm.org/doi/10.1145/3290605.3300789"><i class="fa-solid fa-link"></i> ACM DL</a> | <a href="https://www.youtube.com/watch?v=asIS1InULmQ"><i class="fa-solid fa-video"></i> Video</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
+               
             <!-- <div class="blog classic-view py-md-4">
               <div class="card card-body">
                 <div class="row">
@@ -349,24 +194,24 @@
           <!-- ********************************* -->
           <!-- ************ Sidebar ************ -->
           <!-- ********************************* -->
-          <aside class="col-lg-4 sidebar mt-11 mt-lg-6">
+          <aside class="col-lg-3 sidebar mt-11 mt-lg-6">
 
             <div class="widget">
-              <p class="p-small"><b>Zheng Zhang</b></p>
-              <p class="p-small">Ph.D. Candidate</p>
-              <p class="p-small">Computer Science and Engineering</p>
+              <p class="p-small"><b>Jingyu Tang</b></p>
+              <p class="p-small">Third-year undergraduate student</p>
+              <p class="p-small">Computer Science and Technology</p>
               <!-- <p class="p-small"><a href="http://cse.nd.edu/">Department of Computer Science and Engineering</a></p> -->
-              <p class="p-small"><a href="http://www.nd.edu/">University of Notre Dame</a></p>
+              <p class="p-small">University of Huazhong University of Science and Technology</p>
             </div>
 
             <div class="widget">
-              <p class="p-small"><a href="./assets/files/Zheng Zhang CV.pdf">Curriculum Vitae</a></p>
-              <p class="p-small"><a href="https://scholar.google.com/citations?user=p8pwjGsAAAAJ&hl=en">Google Scholar</a></p>
-              <p class="p-small">Email: <a href="mailto:zzhang37@nd.edu">zzhang37@nd.edu</a></p>
-              <p class="p-small">Twitter: <a href="https://x.com/roryzzhang">@roryzzhang</a></p>
+              <!-- <p class="p-small"><a href="./assets/files/Zheng Zhang CV.pdf">Curriculum Vitae</a></p> -->
+              <p class="p-small"><a href="https://scholar.google.com/citations?user=fehpu2oAAAAJ&hl=en">Google Scholar</a></p>
+              <p class="p-small"> <a href="mailto:tangjingyu0621@gmail.com">Email</a></p>
+              <p class="p-small"> <a href="https://x.com/JingyuTang621">Twitter</a></p>
             </div>
 
-            <div class="widget">
+            <!-- <div class="widget">
               <h4 class="widget-title mb-3">Attending</h4>
               <p class="p-small"><b>CHI 2025 (Yokohama, Japan)</b>
               <p class="p-small fade-text"><b>UIST 2024 (Pittsburgh, PA)</b>
@@ -389,8 +234,6 @@
 
             <div class="widget">
               <h4 class="widget-title mb-3">Teaching</h4>
-              <!-- <p class="p-small"><b>Instructor (UW)</b></p>
-              <p class="p-small">Special Topics in Informatics: Accessibility, Spring 2024</p> -->
               <p class="p-small"><b>Teaching Assistant (Notre Dame)</b></p>
               <p class="p-small">CSE 40748/60748: Human-AI Collaborative Systems</p>
               <p class="p-small">CSE 40113: Design/Analysis of Algorithms</p>
@@ -399,21 +242,21 @@
               <p class="p-small">CSC 173: Computation & Formal Systems</p>
               <p class="p-small">CSC 212: Human Computer Interaction</p>
               <p class="p-small">CSC 172: Data Structures & Algorithms</p>
-            </div>
+            </div> -->
 
-            <div class="widget">
-              <h4 class="widget-title mb-3">Professional Experience</h4>
+            <!-- <div class="widget">
+              <h4 class="widget-title mb-3">Internship Experience</h4>
               <p class="p-small">Meta Reality Labs, Research Scientist Intern (2024)</p>
               <p class="p-small">Amazon, Appied Scientist Intern (2023)</p>
               <p class="p-small">Apple, AI/ML Intern (2022)</p>
-            </div>
+            </div> -->
 
-            <div class="widget">
+            <!-- <div class="widget">
               <h4 class="widget-title mb-3">Service</h4>
               <p class="p-small"><b>Program Committee</b>: IUI '25, CHI Late Breaking Work '23 '24, CHIWORK '24</p>
               <p class="p-small"><b>Reviewer</b>: UIST '23 (Special Recognition) '24 (Special Recognition), CHI '22 '23 '24 (Special Recognition) '25, IUI '25,' DIS '24, IDC '24, CSCW '24, ACL ARR '23 '24</p>
               <p class="p-small"><b>Student Volunteer</b>: CHI '22, AAAI '20</p>
-            </div>
+            </div> -->
 
           </aside>
         </div>
@@ -422,13 +265,13 @@
   </div>
 
 
-  <footer class="bg-dark text-inverse">
+  <!-- <footer class="bg-dark text-inverse">
     <div class="container py-8 py-md-4">
       <div class="row gy-6 gy-lg-0">
         <p>© 2024 Zheng Zhang. All rights reserved.</p>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
