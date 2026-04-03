@@ -28,19 +28,59 @@
     body {
       font-family: "Georgia", serif; /* Use a more readable serif font */
     }
+
+    /* Section titles — blue */
+    .content-wrapper h2,
+    .content-wrapper h3,
+    .content-wrapper h4,
+    .content-wrapper h5{
+      color: #7FB3D5;
+    }
+
+    aside.sidebar .widget:first-of-type b {
+      color: #6B9AC4;
+    }
+
+    /* Sidebar name + section titles: same font size */
+    aside.sidebar .widget:first-of-type > p.p-small:first-child,
+    aside.sidebar .widget h4.widget-title {
+      font-size: 0.95rem;
+    }
+
+    /* Links — yellow */
     a {
-      color: #1462c1;  /* 奶油般柔和的黄 */
+      color: #C8A85D;
       font-weight: normal;
     }
-  
-    a:hover{
-      color: #1462c1;
+
+    a:hover {
+      color: #c6a10e;
       text-decoration: underline;
     }
-    .highlight{
-      color: #c6a10e;  /* 稍浓郁的黄，hover 状态下更醒目 */
-      font-weight: bold;
 
+    .highlight {
+      color: #c6a10e;
+      font-weight: bold;
+    }
+
+    /* Sidebar contact links: sit closer to bio block above */
+    aside.sidebar .widget.widget-contact-links {
+      margin-top: 1rem;
+    }
+
+    /* Sidebar contact links: same as body text; gold on hover */
+    .widget-contact-links a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-color: #c6a10e;
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    .widget-contact-links a:hover {
+      color: #c6a10e;
+      text-decoration: underline;
+      text-decoration-color: #c6a10e;
     }
   </style>
 </head>
@@ -55,7 +95,6 @@
               <a href="https://jytang0621.github.io/" class="logo me-3">
                 <h3 class="text-black fs-30 mb-0">Jingyu Tang</h3>
               </a>
-              <p class="lead fs-18 mb-0">HCI + NLP Researcher</p>
               </div>
           </div>
           <div class="col-md-4 align-self-center text-center text-md-start navigation">
@@ -71,7 +110,7 @@
       <!-- <div class="container"> -->
       <div class="container py-8 py-md-4">
         <div class="row gx-lg-8 gx-xl-12">
-          <div class="col-lg-9">
+          <div class="col-lg-8">
             <div id="about" class="row">
 
               <!-- ********************************* -->
@@ -79,16 +118,13 @@
               <!-- ********************************* -->
 
               <div class="col-md-3 add-padding">
-                <figure class="rounded"><img src="./assets/img/profile_image.jpeg" alt=""/></figure>
+                <figure class="rounded"><img src="./assets/img/me_3.jpg" alt=""/></figure>
               </div>
               <div class="col-md-9 add-padding">
-                <p>I am currently collaborating with <a href="https://toby.li/">Prof. Toby Li</a>, <a href="https://www.ziangxiao.com/">Prof. Ziang Xiao</a>, <a href="https://www.cs.jhu.edu/~yaxing/">Prof. Yaxing Yao</a>, <a href="https://tianshili.me/">Prof. Tianshi Li</a>. Previously, I was fortunate to be supervised by <a href="https://juhokim.com/">Prof. Juho Kim</a> and <a href="http://wanyao.me/">Prof. Yao Wan</a>.</p>
-                <p>My research interests lie at the intersection of Human-Computer Interaction and Natural Language Processing. 
-                  <p>My primary focus is the <b>evaluation</b> of AI technologies. I develop human-centered method to evaluate AI technologies beyond task success rates, <b>uncovering their bias, privacy and security risks</b>. Moreover, I'm particularly interested in <b>evaluating how well AI technologies collaborate with humans</b>. Through comprehensive and in-depth evaluation, my goal is to ensure the reliability and trustworthiness of AI technologies for real-world use.
-
-                </p>
-                </p>
-                <p class="highlight">I will apply for PhD for 2026 Fall!</p>
+                <!-- <p>I am currently collaborating with <a href="https://toby.li/">Prof. Toby Li</a>, <a href="https://www.ziangxiao.com/">Prof. Ziang Xiao</a>, <a href="https://www.cs.jhu.edu/~yaxing/">Prof. Yaxing Yao</a>, <a href="https://tianshili.me/">Prof. Tianshi Li</a>. Previously, I was fortunate to be supervised by <a href="https://juhokim.com/">Prof. Juho Kim</a> and <a href="http://wanyao.me/">Prof. Yao Wan</a>.</p> -->
+                <p>I am currently a final-year undergraduate student at Huazhong University of Science and Technology and a research intern at Microsoft Research Asia, advised by <a href="https://www.microsoft.com/en-us/research/people/jialia/">Jianxun Lian</a>. Starting from Fall 2026, I will start my PhD journey at UT Austin, advised by <a href="https://jiaxin-pei.github.io/">Prof. Jiaxin Pei</a>.</p>
+                <p>My research interests are generally around evaluating and improving the capabilities of AI for human-AI collaboration. More recently, I am working on benchmarking and training proactive MLLMs to better assist and collaborate with humans.</p>
+                <p>I’m always enthusiastic about collaborating with researchers from diverse fields. If you’re interested in working together, feel free to reach out to me!</p>
               </div>
 
               <!-- <div class="col-md-12 add-padding">
@@ -211,13 +247,13 @@
 
             <div class="widget flex gap-2 flex-col">
               <p class="p-small"><b>Jingyu Tang</b></p>
-              <p class="p-small">Fourth-year undergraduate student</p>
-              <p class="p-small">Computer Science and Technology</p>
+              <p class="p-small">Final-year undergraduate student at HUST</p>
+              <p class="p-small">Research Intern at MSRA</p>
+              <p class="p-small">Incoming PhD student at UT Austin</p>
               <!-- <p class="p-small"><a href="http://cse.nd.edu/">Department of Computer Science and Engineering</a></p> -->
-              <p class="p-small">Huazhong University of Science and Technology</p>
             </div>
 
-            <div class="widget">
+            <div class="widget widget-contact-links">
               <!-- <p class="p-small"><a href="./assets/files/Zheng Zhang CV.pdf">Curriculum Vitae</a></p> -->
               <p class="p-small"><a href="https://scholar.google.com/citations?user=fehpu2oAAAAJ&hl=en">Google Scholar</a></p>
               <p class="p-small"> <a href="mailto:tangjingyu0621@gmail.com">Email</a></p>
@@ -258,12 +294,29 @@
               <p class="p-small">CSC 172: Data Structures & Algorithms</p>
             </div> -->
 
-            <!-- <div class="widget">
-              <h4 class="widget-title mb-3">Internship Experience</h4>
-              <p class="p-small">Meta Reality Labs, Research Scientist Intern (2024)</p>
-              <p class="p-small">Amazon, Appied Scientist Intern (2023)</p>
-              <p class="p-small">Apple, AI/ML Intern (2022)</p>
-            </div> -->
+            <div class="widget">
+              <h4 class="widget-title mb-3">Internship experience</h4>
+              <p class="p-small mb-2"><strong>Microsoft Research Asia</strong><br>
+                2026.3 – present · Beijing, China<br>
+                <em>Research Intern</em><br>
+                Adviser: <a href="https://www.microsoft.com/en-us/research/people/jialia/">Jianxun Lian</a></p>
+              <p class="p-small mb-2"><strong>University of Notre Dame</strong><br>
+              2025.5 – 2025.9 · Notre Dame, US<br>
+              <em>Research Intern</em><br>
+              Advisers: <a href="https://toby.li/">Toby Li</a>, <a href="https://www.ziangxiao.com/">Ziang Xiao</a>, <a href="https://www.cs.jhu.edu/~yaxing/">Yaxing Yao</a>, <a href="https://tianshili.me/">Tianshi Li</a></p>
+
+              <p class="p-small mb-2"><strong>Korea Advanced Institute of Science and Technology (KAIST)</strong><br>
+              2024.12 – 2025.5 · Daejeon, Korea<br>
+              <em>Research Intern</em><br>
+              Adviser: <a href="https://juhokim.com">Juho Kim</a></p>
+              <p class="p-small mb-2"><strong>ByteDance</strong><br>
+              2024.9 – 2024.12 · Shanghai, China<br>
+              <em>Web Development Intern</em></p>
+              <p class="p-small mb-0"><strong>Huazhong University of Science and Technology (HUST)</strong><br>
+              2023.12 – 2024.7 · Wuhan, China<br>
+              <em>Research Intern</em><br>
+              Adviser: <a href="http://wanyao.me/">Yao Wan</a></p>
+            </div>
 
             <!-- <div class="widget">
               <h4 class="widget-title mb-3">Service</h4>
