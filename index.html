@@ -47,6 +47,30 @@
       font-size: 0.95rem;
     }
 
+    /* Paper titles: body-like color; slightly smaller than theme h6 (0.85rem) */
+    #publications ~ .blog h6 {
+      color: var(--bs-body-color);
+      font-size: 0.82rem;
+    }
+
+    /* Main intro + publication meta: same size/weight/line-height as body (e.g. research interests) */
+    #about .col-md-9 > p,
+    #publications ~ .blog .col-md-9 p.p-condense {
+      font-size: var(--bs-body-font-size);
+      line-height: var(--bs-body-line-height);
+      font-weight: var(--bs-body-font-weight);
+    }
+
+    #publications ~ .blog .col-md-9 p.p-condense a {
+      font-size: inherit;
+    }
+
+    #publications ~ .blog .col-md-9 p.p-condense .fa-solid,
+    #publications ~ .blog .col-md-9 p.p-condense .fas {
+      font-size: 0.88em;
+      vertical-align: -0.06em;
+    }
+
     /* Publication list links: lighter blue than section title */
     #publications ~ .blog a {
       color: #7AA6CA;
@@ -92,6 +116,23 @@
       text-decoration: underline;
       text-decoration-color: #c6a10e;
     }
+
+    .site-title-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      text-decoration: none;
+    }
+
+    .site-title-link:hover {
+      text-decoration: none;
+    }
+
+    .site-title-link img {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+    }
   </style>
 </head>
 
@@ -102,10 +143,11 @@
         <div class="row gx-lg-8 gx-xl-12 gy-4 gy-lg-0">
           <div class="col-md-8 align-self-center text-center text-md-start navigation flex">
             <div class="d-flex align-items-center">
-              <a href="https://jytang0621.github.io/" class="logo me-3">
+              <a href="https://jytang0621.github.io/" class="logo me-3 site-title-link">
                 <h3 class="text-black fs-30 mb-0">Jingyu Tang</h3>
+                <img id="site-title-bear" src="./assets/img/bear_welcome.gif" alt="Waving bear" data-gif-src="./assets/img/bear_welcome.gif" data-replay-ms="2800">
               </a>
-              </div>
+            </div>
           </div>
           <div class="col-md-4 align-self-center text-center text-md-start navigation">
             <!-- <a href="#about" class="btn btn-sm btn-soft-ash rounded-pill btn-icon btn-icon-start mb-0 me-1 add-margin">About</a>
@@ -120,7 +162,7 @@
       <!-- <div class="container"> -->
       <div class="container py-8 py-md-4">
         <div class="row gx-lg-8 gx-xl-12">
-          <div class="col-lg-8">
+          <div class="col-lg-9">
             <div id="about" class="row">
 
               <!-- ********************************* -->
@@ -145,7 +187,7 @@
             <!-- ********** Publications ********* -->
             <!-- ********************************* -->
 
-            <div id="publications" class="row py-8 py-md-4">
+            <div id="publications" class="row py-4 py-md-1">
               <h2>Publications</h2> 
             </div>
             <div class="blog classic-view py-md-2">
@@ -356,6 +398,29 @@
   </div>
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/theme.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var bear = document.getElementById('site-title-bear');
+
+      if (!bear) {
+        return;
+      }
+
+      var gifSrc = bear.dataset.gifSrc;
+      var replayMs = Number(bear.dataset.replayMs) || 2800;
+
+      window.setInterval(function () {
+        var nextSrc = gifSrc + '?t=' + Date.now();
+        var preloadedGif = new Image();
+
+        preloadedGif.onload = function () {
+          bear.src = nextSrc;
+        };
+
+        preloadedGif.src = nextSrc;
+      }, replayMs);
+    });
+  </script>
 </body>
 
 </html>
